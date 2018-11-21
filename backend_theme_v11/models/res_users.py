@@ -8,7 +8,7 @@ class ResUsers(models.Model):
 
     _inherit = 'res.users'
 
-    sidebar_visible = fields.Boolean("Show App Sidebar", default=True)
+    sidebar_visible = fields.Boolean("Show App Sidebar", default=False)
     chatter_position = fields.Selection(default='sided')
 
     def __init__(self, pool, cr):
