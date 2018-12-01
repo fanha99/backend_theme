@@ -128,6 +128,23 @@ body a {
     color: @brand-primary !important;
 }
 
+// Sticky Header & Footer in List View
+.o_view_manager_content {
+    >div {
+        >.table-responsive {
+            >.o_list_view {
+                thead tr:nth-child(1) th {
+                    background-color: @brand-primary !important;
+                    color: #ffffff !important;
+                }
+                tfoot tr:nth-child(1) td {
+                    background-color: @brand-primary !important;
+                }
+            }
+        }
+    }
+}
+
 // Forms
 
 .o_form_view {
