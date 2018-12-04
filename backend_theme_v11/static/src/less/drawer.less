@@ -3,13 +3,12 @@
 
 /* App Drawer Toggle */
 
-@app-drawer-width: 100%; 
 
 .app-drawer-toggle, .app-drawer-toggle.btn:active {
     background-color: transparent !important;
 }
 
-.app-drawer-icon-open, .app-drawer-icon-close {
+.app-drawer-icon-open {
     color: #ffffff;
 
     &:hover {
@@ -20,16 +19,8 @@
 .app-drawer-icon-open:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-.app-drawer-icon-close {
-    display: none;
-}
-
-// Add background image
 .drawer-nav{
     background: transparent url('/dashboard') no-repeat scroll center center / cover;
-    z-index: 9;
-    width: 100%;
     top: inherit;
     
     .app-drawer-panel-title {
@@ -40,15 +31,6 @@
         padding-top: 80px;
     }
         
-    #appDrawerAppPanelHead {
-        z-index: 9999;
-        background-color: transparent;
-        border: none;
-
-        a {
-            color: #FFFFFF;
-        }
-    }
 }
 
 .app-drawer-nav .app-drawer-title {
@@ -97,23 +79,6 @@
     border: 0px !important;
 }
 
-// User menubar
-
-.oe_topbar_avatar {
-    max-height: 16px !important;
-    height: 16px !important;
-    width: 16px !important;
-    margin-top: -4px !important;
-}
-
-.oe_topbar_name {
-    top: 0px !important;
-}
-
-.main-nav .navbar-systray > .oe_user_menu_placeholder > li > a .caret {
-    top: 0px !important;
-}
-
 // Center app icons
 .app-drawer-nav .panel-body {
     margin: auto;
@@ -125,56 +90,4 @@
 .app-drawer-nav .app-drawer-icon-app {
     border-radius: 3%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.o_mail_navbar_item .o_notification_counter {
-    background: #00a09d !important;
-    color: white !important;
-    margin-top: 1em;
-    margin-right: -0.5em;
-}
-
-// Default drawer width is 80% in web_responsive, make it 100% width
-
-.drawer-open .drawer-overlay {
-    display: none !important;
-}
-
-.drawer-open {
-     .app-drawer-icon-close {
-        display: inherit;
-    }
-
-    ul.oe_secondary_menu, .app-drawer-icon-open {
-        display: none !important;
-    }
-
-    .navbar.navbar-default.main-nav {
-	-webkit-transition: background 0.1ms linear;
-        transition: background 0.1ms linear;
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-        background-color: transparent;
-    }
-}
-
-// Remove transition
-.drawer--left .drawer-nav {
-    -webkit-transition: left .1ms cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; 
-    transition: left .1ms cubic-bezier(0.190, 1.000, 0.220, 1.000) !important;
-}
-
-// Footer
-#appDrawerAppPanelFooter {
-    background-color: transparent;
-    border: none;
-
-    .oe_logo {
-        img {
-            display: block;
-            margin: auto;
-        }
-    }
 }

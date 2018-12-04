@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 # Copyright 2016, 2017 Openworx
+# Copyright 2018 Fanha Giang
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
-    "name": "Material/United Backend Theme",
-    "summary": "Odoo 11.0 community backend theme",
-    "version": "11.0.1.0.4",
+    "name": "QQBee Backend Theme",
+    "summary": "QQbee backend theme",
+    "version": "11.0.0.0.1",
     "category": "Themes/Backend",
-    "website": "http://www.openworx.nl",
 	"description": """
-		Backend theme for Odoo 11.0 community edition.
+		Backend theme for QQbee.
     """,
 	'images':[
         'images/screen.png'
 	],
-    "author": "Openworx",
+    "author": "Openworx, Fanha Giang",
     "license": "LGPL-3",
     "installable": True,
     "depends": [
@@ -23,7 +23,6 @@
     "data": [
         'views/assets.xml',
         'views/res_company_view.xml',
-        'views/web.xml',
     ],
 }
 
